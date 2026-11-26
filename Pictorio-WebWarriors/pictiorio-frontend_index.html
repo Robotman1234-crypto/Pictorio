@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pictiorio - Picture Dictionary</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Pictiorio</a>
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link active" href="#words">Words</a>
+        <a class="nav-link" href="#steps">How it works</a>
+        <a class="nav-link" href="#about">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header & Search -->
+  <header class="py-5 text-center bg-white border-bottom">
+    <div class="container">
+      <h1 class="fw-bold">Don't Just Read Words. Picture Them.</h1>
+      <p class="text-muted mb-4">An interactive picture dictionary for tough, everyday vocabulary.</p>
+      
+      <form class="row justify-content-center" action="#words">
+        <div class="col-md-6">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search a word like 'Audacity'...">
+            <button class="btn btn-dark" type="submit">Search</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <!-- Word Cards -->
+  <section id="words" class="py-5">
+    <div class="container">
+      <h3 class="mb-4 fw-bold">Featured Words</h3>
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <label class="flip-card w-100">
+            <input type="checkbox" class="d-none">
+            <div class="flip-inner">
+              <div class="flip-front card shadow-sm">
+                <img src="images/procrastinate.png" class="card-img-top" alt="Procrastinate">
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold">PROCRASTINATE</h5>
+                  <small class="text-muted">Click card to flip</small>
+                </div>
+              </div>
+              <div class="flip-back card bg-dark text-white p-4">
+                <span class="badge bg-warning text-dark mb-2 w-50">Verb</span>
+                <h5>Procrastinate</h5>
+                <p class="small">To delay or put off doing something until later, especially out of laziness.</p>
+                <p class="small fst-italic text-light">"I always procrastinate before starting my assignments."</p>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3">
+          <label class="flip-card w-100">
+            <input type="checkbox" class="d-none">
+            <div class="flip-inner">
+              <div class="flip-front card shadow-sm">
+                <img src="images/audacity.png" class="card-img-top" alt="Audacity">
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold">AUDACITY</h5>
+                  <small class="text-muted">Click card to flip</small>
+                </div>
+              </div>
+              <div class="flip-back card bg-dark text-white p-4">
+                <span class="badge bg-danger mb-2 w-50">Noun</span>
+                <h5>Audacity</h5>
+                <p class="small">Bold, fearless, or shameless behavior that shocks other people.</p>
+                <p class="small fst-italic text-light">"He had the audacity to walk in late without apologizing."</p>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3">
+          <label class="flip-card w-100">
+            <input type="checkbox" class="d-none">
+            <div class="flip-inner">
+              <div class="flip-front card shadow-sm">
+                <img src="images/ephemeral.png" class="card-img-top" alt="Ephemeral">
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold">EPHEMERAL</h5>
+                  <small class="text-muted">Click card to flip</small>
+                </div>
+              </div>
+              <div class="flip-back card bg-dark text-white p-4">
+                <span class="badge bg-info text-dark mb-2 w-50">Adjective</span>
+                <h5>Ephemeral</h5>
+                <p class="small">Lasting for a very short amount of time.</p>
+                <p class="small fst-italic text-light">"Sunset colors are beautiful but ephemeral."</p>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3">
+          <label class="flip-card w-100">
+            <input type="checkbox" class="d-none">
+            <div class="flip-inner">
+              <div class="flip-front card shadow-sm">
+                <img src="images/serendipity.png" class="card-img-top" alt="Serendipity">
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold">SERENDIPITY</h5>
+                  <small class="text-muted">Click card to flip</small>
+                </div>
+              </div>
+              <div class="flip-back card bg-dark text-white p-4">
+                <span class="badge bg-success mb-2 w-50">Noun</span>
+                <h5>Serendipity</h5>
+                <p class="small">Finding something good or useful by pure chance when you weren't looking for it.</p>
+                <p class="small fst-italic text-light">"Meeting my best friend on that train was pure serendipity."</p>
+              </div>
+            </div>
+          </label>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="steps" class="py-5 bg-white border-top">
+    <div class="container">
+      <h3 class="mb-4 fw-bold text-center">How It Works</h3>
+      <div class="row text-center g-3">
+        <div class="col-md-3">
+          <div class="p-3 border rounded">
+            <h5>1. Search</h5>
+            <p class="text-muted small mb-0">Look up any difficult word.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-3 border rounded">
+            <h5>2. Visualize</h5>
+            <p class="text-muted small mb-0">See a picture that explains the vibe.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-3 border rounded">
+            <h5>3. Flip</h5>
+            <p class="text-muted small mb-0">Click the card to read the meaning.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-3 border rounded">
+            <h5>4. Remember</h5>
+            <p class="text-muted small mb-0">Lock the word into memory easily.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="about" class="py-3 bg-dark text-white text-center">
+    <div class="container">
+      <small>Pictiorio — Built by Team WebWarrior</small>
+    </div>
+  </footer>
+
+</body>
+</html>
